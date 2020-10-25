@@ -24,8 +24,6 @@
   ],
   "scripts": {
     "prepare": "npm run build",
-    "clean": "npm run clean.css.js",
-    "clean.css.js": "find ./src -name *.css.js -type f -delete",
     "build": "npm run build.prod && npm run build.nonmin",
     "build.prod": "webpack --config config/webpack.prod.js --progress --profile --bail",
     "build.nonmin": "webpack --config config/webpack.nonmin.js --progress --profile --bail",

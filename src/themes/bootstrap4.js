@@ -1,5 +1,5 @@
 import { AbstractTheme } from '../theme.js'
-import rules from './bootstrap4.css.js'
+import rules from './bootstrap4.css'
 import { trigger } from '../utilities'
 
 /* Theme config options that allows changing various aspects of the output */

@@ -1,5 +1,5 @@
 import { AbstractTheme } from '../theme.js'
-import rules from './barebones.css.js'
+import rules from './barebones.css'
 
 export class barebonesTheme extends AbstractTheme {
   addInputError (input, text) {

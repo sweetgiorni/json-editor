@@ -1,6 +1,6 @@
 import { AbstractEditor } from '../editor.js'
 import { extend, trigger } from '../utilities.js'
-import rules from './array.css.js'
+import rules from './array.css'
 
 export class ArrayEditor extends AbstractEditor {
   askConfirmation () {

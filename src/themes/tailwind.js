@@ -1,5 +1,5 @@
 import { AbstractTheme } from '../theme.js'
-import rules from './tailwind.css.js'
+import rules from './tailwind.css'
 
 const options = {
   disable_theme_rules: false, /* Disable creation of Inline Style Rules */

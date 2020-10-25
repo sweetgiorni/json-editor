@@ -1,5 +1,5 @@
 import { AbstractTheme } from '../theme.js'
-import rules from './html.css.js'
+import rules from './html.css'
 
 export class htmlTheme extends AbstractTheme {
   getFormInputLabel (text, req) {

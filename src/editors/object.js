@@ -1,6 +1,6 @@
 import { AbstractEditor } from '../editor.js'
 import { extend, hasOwnProperty, trigger } from '../utilities.js'
-import rules from './object.css.js'
+import rules from './object.css'
 
 export class ObjectEditor extends AbstractEditor {
   constructor (options, defaults, depth) {

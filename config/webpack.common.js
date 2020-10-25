@@ -1,6 +1,6 @@
 const webpack = require('webpack')
 const helpers = require('./helpers')
-const CssToJSON = require('../build/CssToJson')
+const path = require('path')
 
 const bannerText = `/**
 * @name JSON Editor
@@ -13,6 +13,8 @@ const bannerText = `/**
 * @license MIT
 * @example see README.md and docs/ for requirements, examples and usage info
 */`
+
+/** @type {import('webpack').Configuration} */
 module.exports = {
   entry: {
     jsoneditor: './src/core.js'
@@ -48,6 +50,13 @@ module.exports = {
       },
       {
         test: /\.css$/,
+        include: /src/,
+        use: {
+          loader: path.resolve('loaders/css-to-json.js')
+        }
+      },
+      {
+        test: /\.css$/,
         exclude: /(node_modules)|(src\/themes)|(src\/editors)/,
         use: ['style-loader', 'css-loader']
       }
@@ -59,10 +68,7 @@ module.exports = {
         '{{ VERSION }}',
         JSON.stringify(require('../package.json').version)
       )
-    ),
-    new CssToJSON({
-      pattern: './src/**/*.css'
-    })
+    )
   ],
   performance: {
     hints: false

@@ -1,6 +1,6 @@
 import { SelectEditor } from './select.js'
 import { extend } from '../utilities.js'
-import rules from './choices.css.js'
+import rules from './choices.css'
 
 export class ChoicesEditor extends SelectEditor {
   setValue (value, initial) {

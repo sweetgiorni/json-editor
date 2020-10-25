@@ -9,7 +9,7 @@ import { extend, getShadowParent, hasOwnProperty } from './utilities.js'
 import { AbstractEditor } from './editor'
 import { AbstractTheme } from './theme'
 import { AbstractIconLib } from './iconlib'
-import styleRules from './style.css.js'
+import styleRules from './style.css'
 
 export class JSONEditor {
   constructor (element, options = {}) {
